@@ -11,7 +11,6 @@ arad = ang / rad
 arad = ang * math.pi/180
 print(deg,min,sec,"=",arad)
 
-
 angle = 32
 angleToRad = angle * (math.pi / 180)
 rad = 1.8375
