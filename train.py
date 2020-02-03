@@ -1,4 +1,6 @@
 import math
+from math import *
+from turtle import *
 
 a,b,c = 1, 7, 1
 
@@ -179,5 +181,124 @@ while index > 0:
 if srtingReversed == string:
     print("It is a palindrome")
 else: print("Is not a palindrome")
+
+# List sorted
+t1 = [31, 28, 31, 30 , 31, 30, 31, 31, 30, 31, 30 ,31]
+t2 = ['Junuary', 'February', 'March', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December']
+
+index = len(t1)
+x = - 1
+while index -1 > x:
+    x = x + 1
+    y = x % 12
+    print(t1[y], t2[y])
+
+x = - 1
+while index -1 > x:
+    x = x + 1
+    y = x % 12 
+    print(t2[y],end=' ')
+
+
+list01 = [32, 5, 12, 8, 3, 75, 2, 15]
+test = []
+maxNumber = 0
+for x in range(len(list01)):
+    x = list01[x]
+    if x > maxNumber:
+        maxNumber = x
+print(f"The big number is {maxNumber}.")
+
+
+list01 = [32, 5, 12, 8, 3, 75, 2, 15]
+index = len(list01)
+pair = []
+odd = []
+x = - 1
+while index - 1 > x:
+    x = x + 1
+    y = list01[x]
+    if y % 2 == 0:
+        pair.append(y)
+    elif y % 2 != 0:
+        odd.append(y)
+
+print(pair,odd)
+
+list01 = ['Jean', 'Maximilien', 'Brigitte', 'Sonia', 'Jean-Pierre', 'Sandra']
+
+index = len(list01)
+x = - 1
+a = []
+b = []
+while index -1 > x:
+    x = x +1
+    y = list01[x]
+    if len(y) < 6:
+        a.append(y)
+    elif len(y) >= 6:
+        b.append(y)
+print(a, b)
+
+
+number = 121 
+angle = pi/6
+
+print(sqrt(number), sin(angle))
+
+
+# MilesHour = input("Enter your valeurs: ")
+
+MilesHour = float(1)
+
+MeterHour = MilesHour * 1609
+
+MeterHourToMeterSeond = MeterHour / 3600
+
+MeterHourToKilometerHour = MeterHour / 1000
+
+
+print(f"{MilesHour} miles/h is equal {MeterHourToMeterSeond} m/s and {MeterHourToKilometerHour} km/h.")
+
+mps = (MilesHour * 1609)/3600
+
+kmph = (MilesHour * 1609)/1000
+
+print(f"{MilesHour} miles/h is equal {mps} m/s and {kmph} km/h.")
+
+a, b, c = 3, 4, 5 
+
+P = a + b + c
+
+p = P/2
+S = sqrt(p*(p - a)*(p - b)*(p - c))
+
+print(S,"cm2")
+
+
+# l = 30 #cm
+# T = 2 * pi * sqrt(1/g)
+
+# print(g)
+
+
+
+list_ = []
+# number = "start"
+while number != "":
+    try:
+        number = input("Enter your number :")
+        if number != "":
+            list_.append(float(number))
+    except ValueError:
+        print("Oops!  That was no valid number.  Try again...")
+
+if not list_:
+    print("List is empty")
+else: print(list_)
+        
+# Turtle game
+
+
 
 
