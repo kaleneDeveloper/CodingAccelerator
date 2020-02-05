@@ -201,7 +201,6 @@ while index -1 > x:
 
 
 list01 = [32, 5, 12, 8, 3, 75, 2, 15]
-test = []
 maxNumber = 0
 for x in range(len(list01)):
     x = list01[x]
@@ -297,8 +296,6 @@ if not list_:
     print("List is empty")
 else: print(list_)
         
-# Turtle game
-
 
 
 
