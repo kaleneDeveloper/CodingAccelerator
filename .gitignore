@@ -3,3 +3,5 @@ tmp/*
 c1.txt
 c2.txt
 s.txt
+fr.txt
+__pycache__/
