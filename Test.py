@@ -16,4 +16,8 @@ def test():
     return [i for i in list1 for j in list1 if i + j == target]
 
 print(test())
+<<<<<<< Updated upstream
 ###
+=======
+@@@
+>>>>>>> Stashed changes
