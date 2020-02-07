@@ -1,4 +1,5 @@
 tmp/*
+*.txt
 c1.txt
 c2.txt
 s.txt
