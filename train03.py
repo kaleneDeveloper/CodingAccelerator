@@ -18,19 +18,39 @@ while n < listN :
     print(string,y)
     n = n + 1
 
-listNote = []
-note = 1
-while note != "":
-    try:
-        print("Enter your note :")
-        note = input()
-        note = float(note)
-        if note < 0:
-            exit()
-        if note > 0:
-            listNote.append(note)
-    except:
-        if note != "":
-            print("Oops!  That was no valid number.  Try again...")
 
-print(f"List of note: {listNote}")
+def note():
+    listNote = []
+    note = 1
+    total = 0
+    while note != "":
+        try:
+            print("Enter your note :",end=" ")
+            note = input()
+            note = float(note)
+            if note < 0:
+                exit()
+            if note > 0:
+                listNote.append(note)
+                print(f"Number of note(s) entered {len(listNote)}")
+                total = total + note
+        except:
+            if note != "":
+                print("Oops!  That was no valid number.  Try again...")
+
+    noteMax = 0       
+    noteMin = listNote[0]
+    for x in listNote:
+        if x > noteMax:
+            noteMax = x
+        if x < noteMin:
+            noteMin = x
+
+    index = len(listNote)
+    moyen = total / index
+    print(f"List of notes: {listNote}")
+    print(f"Note minimum {noteMin}, note maximum {noteMax}, pour une moyen de: {moyen}")
+
+note()
+
+
