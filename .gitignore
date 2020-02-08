@@ -1,6 +1,13 @@
 tmp/*
-c1.txt
-c2.txt
-s.txt
-fr.txt
+Python/*
+Python/c1.txt
+Python/c2.txt
+Python/s.txt
+Python/fr.txt
+JavaScript/c1.txt
+JavaScript/c2.txt
+JavaScript/s.txt
+JavaScript/fr.txt
 __pycache__/
+.vscode/
+Python\Udemy/*

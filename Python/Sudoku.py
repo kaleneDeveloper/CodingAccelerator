@@ -26,30 +26,6 @@ def sudoku():
 
 sudoku()
 
-
-def sudoku():
-    try:
-        with open("s.txt", 'r') as f:
-            contents1 = f.read().splitlines()
-    except FileNotFoundError:
-        return False
-    for x in contents1:
-        test = re.sub('[^0-9\_]', '', x)
-        # test = '[%s],' % ", ".join(map(str,test))
-        test = test.replace("_", "0")
-        
-        print(test).splitlines()
-
-        # if test != "[],":
-        #     print(test)
-
-# sudoku()
-
-
-
-
-
-
 sudoku01 = [
 [1,9,5,7,8,4,2,0,0],
 [3,0,6,5,2,9,1,4,7],
@@ -61,7 +37,6 @@ sudoku01 = [
 [5,0,8,9,7,6,3,2,1],
 [7,6,1,2,3,5,8,0,4]
 ]
-
 
 # print(sudoku01[0:1])
 
@@ -92,18 +67,18 @@ sudoku01 = [
 # test = {[x] for x in a.contents1()}
 # print(test)
 
-def sudoku():
-    try:
-        with open("s.txt", 'r') as f:
-            contents1 = f.read().splitlines()
-    except FileNotFoundError:
-        return False
-    for x in contents1:
-        test = re.sub('[^0-9\_]', '', x)
-        test = '[%s],' % ", ".join(map(str,test))
-        test = test.replace("_", "0")
-        if test != "[],":
-            print(test)
+# def sudoku():
+#     try:
+#         with open("s.txt", 'r') as f:
+#             contents1 = f.read().splitlines()
+#     except FileNotFoundError:
+#         return False
+#     for x in contents1:
+#         test = re.sub('[^0-9\_]', '', x)
+#         test = '[%s],' % ", ".join(map(str,test))
+#         test = test.replace("_", "0")
+#         if test != "[],":
+#             print(test)
 
 # sudoku()
  

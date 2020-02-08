@@ -7,15 +7,14 @@ import re
 # with open(sys.argv[2], 'r') as f:
 #     contents2 = f.read()
 
-with open("c1.txt", 'r') as f:
-    contents1 = f.read().splitlines()
+# with open("c1.txt", 'r') as f:
+#     contents1 = f.read().splitlines()
 
-with open("c2.txt", 'r') as f:
+with open("c2.txt",'r') as f:
     contents2 = f.read().splitlines()
-
-for x in contents1:
-    for y in contents2:
-        print([y],",")
+for x in contents2:
+        print([x],"")
+        print(type(x))
 
 # for x in contents1:
 #     for y in contents2:
