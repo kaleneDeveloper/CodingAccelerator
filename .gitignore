@@ -1,5 +1,4 @@
 tmp/*
-*/Python/*
 Python/c1.txt
 Python/c2.txt
 Python/s.txt
@@ -10,4 +9,3 @@ JavaScript/s.txt
 JavaScript/fr.txt
 __pycache__/
 .vscode/
-Python/Udemy/*
