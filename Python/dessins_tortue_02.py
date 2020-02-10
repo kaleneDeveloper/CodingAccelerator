@@ -1,7 +1,7 @@
 from dessins_tortue_01 import *
 
-up()
-goto(5, -5)
+# up()
+# goto(5, -5)
 
 
 def ligneCarre():

@@ -7,7 +7,6 @@ def carre(taille, couleur):
         forward(taille)
         right(90)
         c = c + 1
-carre(305, "blue")
 
 def essai():
     "This function is well documented but does almost nothing"
