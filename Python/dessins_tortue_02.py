@@ -2,7 +2,9 @@ from dessins_tortue_01 import *
 
 # up()
 # goto(5, -5)
-
+speed(10)
+pensize(2)
+shapesize(0.50,0.50)
 
 def ligneCarre():
     i = 0
@@ -19,7 +21,7 @@ def lignRepeat(n):
         ligneCarre()
         up()
         i = i + 1
-        goto(5, -30 * i - 5)
+        goto(0, -30 * i)
 
 
  

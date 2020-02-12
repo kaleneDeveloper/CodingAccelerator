@@ -9,8 +9,9 @@ def carre(taille, couleur):
         c = c + 1
 
 def essai():
-    "This function is well documented but does almost nothing"
+    "This function is well documented but does almost nothing."
     print("Nothing to report")
+
 essai()
 print(essai.__doc__)
 

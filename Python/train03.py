@@ -107,24 +107,34 @@ def volBoite(x1, x2, x3):
 
 print(volBoite(5.2, 7.7, 3.3))
 
-def maximum(n1, n2, n3):
-    if n1 >= n2 and n1 >= n3:
-        return n1
-    elif n2 >= n1 and n2 >= n3:
-        return n2
-    else:
-        return n3
+# def maximum(n1, n2, n3):
+#     if n1 >= n2 and n1 >= n3:
+#         return n1
+#     elif n2 >= n1 and n2 >= n3:
+#         return n2
+#     else:
+#         return n3
        
-three = False
-while three == False:
-    try:
-        one = float(input("Insert your number one : "))
-        two = float(input("Insert your number two : "))
-        three = float(input("Insert your number three : "))
-    except ValueError:
-        print("Oops!  That was no valid number.  Try again...")
+# three = False
+# while three == False:
+#     try:
+#         one = float(input("Insert your number one : "))
+#         two = float(input("Insert your number two : "))
+#         three = float(input("Insert your number three : "))
+#     except ValueError:
+#         print("Oops!  That was no valid number.  Try again...")
 
 
-print("The big number is", maximum(one, two, three))
+# print("The big number is", maximum(one, two, three))
 
+
+
+def countString(ca, ch):
+    i = 0
+    for x in ch:
+        if x == ca:
+            i += 1
+    return i
+
+print(countString('e', 'Cette phrase est un exemple'))
 

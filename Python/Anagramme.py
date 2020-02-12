@@ -26,5 +26,5 @@ y = "".join(list1)
 def isAnagram(x, y):
     return [y for y in list1 if len(x) == len(y) if sorted(x) == sorted(y)]
 
-print(isAnagram(x,y))
+print(isAnagram(x, y))
 

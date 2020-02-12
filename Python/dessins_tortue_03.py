@@ -1,4 +1,7 @@
 from turtle import *
+speed(10)
+pensize(2)
+shapesize(0.50,0.50)
 
 def carre(taille, couleur):
     color(couleur)
@@ -30,10 +33,21 @@ def etoile5(taille, couleur):
 
 def etoile6(taille, couleur):
     color(couleur)
+    i = 1
     for i in range(3):
         forward(taille)
         right(120)
-etoile6(100, "red")
+
+    penup()
+    goto(pos() + (0,- (taille * 0.53333333)))
+    pendown()
+    i += 1
+    for i in range(3):
+        forward(taille)
+        right(-120)
+
+
+
 
 up()
 goto(-200, 200)
