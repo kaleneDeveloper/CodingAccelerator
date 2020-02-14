@@ -5,9 +5,9 @@ while true
     print "Enter your number : "
     string = gets.chomp
     number = string.to_i
-    toGuess = 0
+    toGuess = 10
     
-    if string == "q" || string == "" 
+if string == "q" || string == "" || string == "Q"
         exit
     elsif number == 0 && string != "0"
         puts "Please enter integer."
@@ -25,9 +25,9 @@ while true
         end
         if i >= 4
             if toGuess.even?
-                puts "Your number is peer."
+                puts "The number is peer."
             else
-                puts "Your number is odd."
+                puts "The number is odd."
             end
         end
     end

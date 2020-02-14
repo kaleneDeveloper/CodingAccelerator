@@ -1,7 +1,13 @@
+// const express = require('express')
+const debug = require('debug')
+// const app = express()
 const fs = require('fs')
 
+debugWarn = debug('warn')
+debugError = debug('error')
 // const c1 = fs.readFileSync("./"+process.argv[2],"utf8").split('\n')
 // const c2 = fs.readFileSync("./"+process.argv[3],"utf8").split('\n')
+
 
 fs.readFile("./"+"c1.txt", 'utf8', function(err, contents) {
     console.log(contents);
