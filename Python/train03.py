@@ -138,3 +138,40 @@ def countString(ca, ch):
 
 print(countString('e', 'Cette phrase est un exemple'))
 
+serie = [5, 8, 2, 1, 9, 3, 6, 7]
+
+def indexMax(list):
+    max = serie[0]
+    i = 0
+    for x in serie:
+        if x > max:
+            max = serie[i]
+            index = i
+        i += 1
+    return f"The big number is {max} and its index is {index}."
+
+
+print(indexMax(serie))
+
+
+mouth = ["Junuary", "February", "Marsh", "April", "May", "June", "July", "August","September", "October", "November", "December"]
+
+def nameMonth(n):
+    return mouth[n - 1]
+
+print(nameMonth(12))
+
+
+
+def inverse(string):
+    string = "je ne sais pas quoi ecrire !"
+    index = len(string)
+    store = ""
+    i = 0
+    while i < index:
+        store += string[index - i -1]
+        i += 1
+    return store
+
+print(inverse(string))
+
