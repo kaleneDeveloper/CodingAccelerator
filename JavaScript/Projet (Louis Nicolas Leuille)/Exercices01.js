@@ -1,60 +1,4 @@
-// First methode
-// try {
-//     do {
-
-//         var choose = Number(prompt("What do you want to do ? : \n1. Addition \n2. Substraction \n3. Multiplication \n4. Division"));
-
-//         if(choose != "" && choose != null && choose != 1 && choose != 2 && choose != 3 && choose != 4) {
-            
-//             alert(choose + " is not defined \nChoose : \n1. Addition \n2. Substraction \n3. Multiplication \n4. Division");
-
-//         }
-
-//     } while(choose != 1 && choose != 2 && choose != 3 && choose != 4)
-
-//     switch(choose) {
-//         case 1:
-//             firstNumer  = parseFloat(prompt("Enter your first number:"));
-//             secondNumber = parseFloat(prompt("Enter your second number:"));
-//             resultat = firstNumber + secondNumber;
-//             alert("Your resultat is " + firstNumber + "+" + secondNumber + " = " + resultat);
-//             break;
-//         case 2:
-//             firstNumer  = parseFloat(prompt("Enter your first number:"));
-//             secondNumber = parseFloat(prompt("Enter your second number:"));
-//             resultat = firstNumber - secondNumber;
-//             alert("Your resultat is " + firstNumber + "-" + secondNumber + " = " + resultat);
-//             break;
-//         case 3:
-//             firstNumer  = parseFloat(prompt("Enter your first number:"));
-//             secondNumber = parseFloat(prompt("Enter your second number:"));
-//             resultat = firstNumber * secondNumber;
-//             alert("Your resultat is " + firstNumber + "*" + secondNumber + " = " + resultat);
-//             break;
-//         case 4:
-//             firstNumer  = parseFloat(prompt("Enter your first number:"));
-//             secondNumber = parseFloat(prompt("Enter your second number:"));
-//             resultat = firstNumber / secondNumber;
-//             if (resultat == Infinity) {
-//                 alert("Your resultat is " + firstNumber + "/" + secondNumber + " = 0");
-//             }
-//             else {
-//             alert("Your resultat is " + firstNumber + "/" + secondNumber + " = " + resultat);
-//             }
-//             break;
-//         default:
-//             throw new Error(error);
-//     }
-// }
-// catch(error) {
-//     alert(choose + " is not defined \nChoose : \n1. Addition \n2. Substraction \n3. Multiplication \n4. Division");
-// }
-
-//Second methode
-
 do {
-
-    var redoCalcul = true;
 
     try {
         function Addition(numberA, numberB) {
@@ -107,7 +51,6 @@ do {
                 throw new Error(error);
         }
 
-
     }
     catch(error) {
         alert(choose + " is not defined \nChoose : \n1. Addition \n2. Substraction \n3. Multiplication \n4. Division");
@@ -130,12 +73,15 @@ do {
         alert("Your resultat is " + firstNumber + "/" + secondNumber + " = " + resultat);
         }
     }
-
+    
+    let redoCalcul = true;
+    
     if(confirm("Would you like to redo a calculation ?")) {
-        var redoCalcul = true;
+        redoCalcul = true;
     }
     else {
-        var redoCalcul = false;
+        redoCalcul = false;
     }
 
 } while(redoCalcul == true)
+
