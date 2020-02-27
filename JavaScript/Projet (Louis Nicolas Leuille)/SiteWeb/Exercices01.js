@@ -1,8 +1,13 @@
 do {
 
     try {
-        function Addition(numberA, numberB) {
-            return numberA + numberB;
+        function Addition(...numbers) {
+            let resultat = 0;
+            numbers.forEach((number) => {
+                resultat += number
+            })
+
+            return resultat;
         }
         function Multiplication(numberA, numberB) {
             return numberA * numberB;
@@ -74,7 +79,7 @@ do {
         }
     }
     
-    let redoCalcul = true;
+    
     
     if(confirm("Would you like to redo a calculation ?")) {
         redoCalcul = true;

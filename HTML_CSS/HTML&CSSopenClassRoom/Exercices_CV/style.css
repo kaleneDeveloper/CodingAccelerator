@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'komika_titleregular';
+    src: url('Fonts/KomikaTitle-webfont.eot');
+    src: url('Fonts/KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/KomikaTitle-webfont.woff2') format('woff2'),
+         url('Fonts/KomikaTitle-webfont.woff') format('woff'),
+         url('Fonts/KomikaTitle-webfont.ttf') format('truetype'),
+         url('Fonts/KomikaTitle-webfont.svg#komika_titleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+	color: black; /* Commentaires */
+	font-family: 'komika_titleregular',arial , Impact, "arial Black"
+}
+
+p, ul
+{
+	font-size: 1em
+}
+
+#image_profil
+ {
+    padding-right: 0%;
+    border: 3px #cc9900 solid;
+    box-shadow: 1px 1px 20px;
+    width: 80%;
+    max-width: 120px;
+    min-width: 120px;
+    margin-left: -20%;<
+ }
+#Information_Profil
+ {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    width: 80%;
+    padding-left: 2%;
+    margin: auto;
+    border: 3px #cc9900 solid;
+    max-width: 800px;
+
+ }
+
+.clear_right_01
+{
+	clear: both;
+}
+
+body
+{
+	background: url("image/Background_6726.png")
+}
+
+h1
+{
+	text-align: center;
+   
+    background-color: #CCC;
+    margin: auto;  
+}
+
+h2
+{
+	color: #cc9900;
+}
+a:hover
+{
+	color: green;
+}
+
+a:visited
+{
+	color: #660066;
+}
+
+section
+{
+    text-align: justify;
+    border: 3px #cc9900 solid;
+    margin: auto;
+    width: 80%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-width: 800px;  
+}
