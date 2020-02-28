@@ -12,17 +12,19 @@
     padding: 30px;
     text-align: center;
 }
-/* HDEAR */
+
+/* HEADER */
 .header {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     height: 70px;
     line-height: 70px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #53535373;
     position: fixed;
     top: 0;
     z-index: 999;
+    transition: background-color 1s ease-in-out;
 }
 
 .header .header-logo {
@@ -43,8 +45,9 @@
 }
 
 .header .header-menu a:hover {
-    color: #3498db;
+    color: #3498db !important;
 }
+
 
 /* BANNER */
 .banner {
@@ -96,3 +99,39 @@
     display: inline-block;
     list-style-type: none;
 }
+
+/* CONTACT ME */
+.footer-contact-form {
+    width: 550px;
+    margin: auto;
+}
+
+/* MODAL */
+.own-modal {
+    padding-top: 120px;
+}
+
+/* EMAIL */
+.buttonSend {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* RESPONSIVE */
+
+/* CONTACT ME */
+@media screen and (max-width: 550px) {
+    .footer-contact-form {
+        width: 100%;
+    }
+}
+
+/* BUTTON CONTACT ME */
+@media screen and (max-width: 600px) {
+    #openModal {
+        display: none;
+    }
+}
+
+
