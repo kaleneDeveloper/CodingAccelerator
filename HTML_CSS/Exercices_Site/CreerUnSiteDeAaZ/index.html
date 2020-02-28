@@ -3,6 +3,7 @@
     <head>
         <title>My portfolio(kalene A PIOIU)</title>
         <meta charset="UTF-8" lang="fr" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
         <link rel="stylesheet" href="src/css/main.css">
@@ -18,46 +19,90 @@
         <!-- meta SEO -->
 
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-        <!-- Scrolled bar -->
-        <!-- Scrolled bar -->
     </head>
     <body>
       
-        <!-- Banner -->
+        <!-- BANNER -->
+
+        <!-- NAV -->
         <div class="block">
-            <header class="header">
-                <a href="#" class="header-logo">My portfolio</a>
-                <nav class="header-menu navbar-inverse navbar-fixed-top">
-                    <a href="#">Accueil</a>
-                    <a href="#">A propos</a>
-                    <a href="#">Mes travaux</a>
-                    <a href="#">Contact</a>
-                </nav>
-            </header>
+          <header class="header">
+            <div class="toggle_btn">
+              <span></span>
+            </div>
+            <a href="#" class="header-logo">My portfolio</a>
+              <div class="menuResponsive nav">
+              <nav class="header-menu header-menu-inverse header-menu-fixed-top">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">My work</a>
+                <a href="#">Contact</a>
+              </nav>
+            </div>
+          </header>
         </div>
+            <!-- NAV -->
+
         <div class="block">
             <div class="banner">
                 <img src="src/img/BG.jpg" alt="Computer" class="banner-image">
                 <div class="banner-content">
-                    <h1 class="title is-1">Bienvenue sur mon portfolio</h1>
-                    <h2 class="subtitle">Decouvrez mes travaux et mon univer !</h2>
+                    <h1 class="title is-1">Welecome to my portfolio</h1>
+                    <h2 class="subtitle">Discover my work and my univers !</h2>
                     <button class="button is-link" id="openModal">Contact me !</button>
-
                 </div>
             </div>
         </div>
-        <!-- Banner -->
+        <!-- BANNER -->
 
-        <!-- modal -->
+        <!-- MODAL -->
         <div class="modal own-modal" id="modalToOpen">
           <div class="modal-background"></div>
           <div class="modal-card">
             <header class="modal-card-head">
-              <p class="modal-card-title">Modal title</p>
+              <p class="modal-card-title">Contact Kalene A PIOU</p>
               <button class="delete" aria-label="close" id="closeModal"></button>
             </header>
             <section class="modal-card-body">
-             <p>Le contenu de mon modal</p>
+             <div class="block">
+              <h2 class="headin-site">Contact me :</h2>
+              <div class="footer-contact-form">
+                <form>
+
+                  <div class="field">
+                    <label class="label">Name*</label>
+                    <div class="control">
+                      <input id="name" class="input" type="text" placeholder="e.g Alex Smith" name="name">
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Email*</label>
+                    <div class="control">
+                      <input id="email" class="input" type="email" placeholder="e.g. alexsmith@gmail.com" name="email">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Subject*</label>
+                    <div class="control">
+                      <input id="subject" class="input" type="email" placeholder="exemple" name="subject">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Message*</label>
+                    <div class="control">
+                      <textarea id="message" class="textarea" placeholder="text area" name="message"></textarea>
+                    </div>
+                    <div class="buttonSend">
+                      <button class="button is-link" id="sendEmail">To send !</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+             </div>
             </section>
             <footer class="modal-card-foot">
               <button class="button is-link">Save changes</button>
@@ -65,11 +110,13 @@
             </footer>
           </div>
         </div>
-        <!-- modal -->
+        <!-- MODAL -->
 
-        <!-- Section a propos -->
+        <div id="mark"></div>
+
+        <!-- ABOUT -->
         <div class="block">
-          <h2 class="subtile headin-site">A propos</h2>
+          <h2 class="subtile headin-site">About</h2>
             <div class="container about">
                 <div class="columns about-single-element">
                     <div class="column about-single-element">
@@ -85,15 +132,14 @@
                         <i class="fab fa-python icon"></i>
                         <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
                     </div>
-                    <div class="mark"></div>
                 </div>
             </div>
         </div>
-        
-        <!-- Section a propos -->
+        <!-- ABOUT -->
+
         <!-- portfolio -->
         <div class="block">
-          <h2 class="subtile headin-site">Mon portfolio</h2>
+          <h2 class="subtile headin-site">My portfolio</h2>
             <div class="container">
                 <div class="tile is-ancestor">
                     <div class="tile is-vertical is-8">
@@ -147,7 +193,7 @@
         </div>
         <!-- portfolio -->
 
-        <!-- Contact -->
+        <!-- CONTACT -->
         <div class="block">
           <footer class="footer">
 						<h2 class="headin-site">Contact me</h2>
@@ -167,7 +213,7 @@
 									</div>
 								</div>
 								<div class="field">
-									<label class="label">Subject</label>
+									<label class="label">Subject*</label>
 									<div class="control">
 										<input id="subject" class="input" type="email" placeholder="exemple" name="subject">
 									</div>
@@ -182,7 +228,6 @@
                   </div>
 								</div>
               </form>
-              
             </div>
             <div class="footer-information">
 							<p>65 rue des developpeur web</p>
@@ -208,31 +253,25 @@
             </div>
           </footer>
         </div>
-        <!-- Contact -->
+        <!-- CONTACT -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/22c6f4e36c.js" crossorigin="anonymous"></script>
         <script src="src/js/main.js"></script>
-
-        $("a").click(function(){
-          $("a").css("background-color","");
-          $(this).css("background-color","black");
-        });
         
         <!-- script to change background color of navigation bar on scroll -->
-
-        <script type="text/javascript">
+        <script type="text/javascript" id="scrolled100">
          $(document).scroll(function(){
            var height = $(".mark").height();
            
-           if( $(this).scrollTop() > height){
+           if( $(this).scrollTop() > height + 400){
              $(".header").css("background-color","#000000d2");
             }else{
               $(".header").css("background-color","#53535373");
             }
             
           });
-          </script>
-
+        </script>
         <!-- script to change background color of navigation bar on scroll -->
     </body>
 </html>

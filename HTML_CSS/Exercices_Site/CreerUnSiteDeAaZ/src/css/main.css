@@ -51,7 +51,7 @@
 
 /* BANNER */
 .banner {
-    margin-top: -30px;
+    margin-top: -9%;
 }
 
 .banner .banner-image {
@@ -82,6 +82,8 @@
 .about .about-single-element p {
     text-align: left;
     margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /* FOOTER */
@@ -100,16 +102,12 @@
     list-style-type: none;
 }
 
-/* CONTACT ME */
-.footer-contact-form {
-    width: 550px;
-    margin: auto;
-}
-
 /* MODAL */
 .own-modal {
     padding-top: 120px;
+    font-size: 30px;
 }
+
 
 /* EMAIL */
 .buttonSend {
@@ -118,7 +116,83 @@
     text-align: right;
 }
 
+/* CONTACT ME */
+.footer-contact-form {
+    width: 550px;
+    margin: auto;
+}
+
 /* RESPONSIVE */
+/* BANNER */
+@media screen and (max-width: 600px) {
+    .banner .banner-content {
+        margin-top: -10%;
+    }
+}
+/* NAV */
+@media screen and (max-width: 600px) {
+    .toggle_btn {
+        height: 30px;
+        width: 30px;
+        position: relative;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .toggle_btn span {
+        height: 4px;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    .toggle_btn span:before {
+        content: '';
+        height: 4px;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        border-radius: 10px;
+
+    }
+    .toggle_btn span:after {
+        content: '';
+        height: 4px;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        border-radius: 10px;
+
+    }
+    .menuResponsive {
+        margin-top: 70px;
+        height: 1000px;
+        background-color: #53535373;
+        width: 135px;
+    }
+    .menuResponsive a {
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    .nav {
+        margin-left: -200px;
+        transition-duration: 0.2s;
+    }
+    .nav_open {
+        margin-left: 0;
+        transition-duration: 0.2s;
+    }
+}
 
 /* CONTACT ME */
 @media screen and (max-width: 550px) {
@@ -133,5 +207,6 @@
         display: none;
     }
 }
+/* RESPONSIVE */
 
 
