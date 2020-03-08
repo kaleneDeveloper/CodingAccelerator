@@ -1,0 +1,65 @@
+.align {
+    display: inline-flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+.is-4 {
+    font-size: 0.75em;
+}
+
+.is-3 {
+    font-size: 1em;
+}
+
+.is-2 {
+    font-size: 1.5em;
+}
+
+.is-1 {
+    font-size: 3em;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+.title.is-1 {
+    font-size: 3rem;
+}
+
+.title.is-2 {
+    font-size: 2.5rem;
+}
+
+.title.is-3 {
+    font-size: 2rem;
+}
+
+.title.is-4 {
+    font-size: 1.5rem;
+}
+
+.title.is-5 {
+    font-size: 1.25rem;
+}
+
+.title.is-6 {
+    font-size: 1rem;
+}
+
+.title.is-7 {
+    font-size: 0.75rem;
+}
+
+.subtitle {
+    word-break: break-word;
+    font-weight: bolder;
+    font-weight: 400;
+}
+
+.title:not(.is-spaced)+.subtitle {
+    margin-top: -1.45rem;
+}
