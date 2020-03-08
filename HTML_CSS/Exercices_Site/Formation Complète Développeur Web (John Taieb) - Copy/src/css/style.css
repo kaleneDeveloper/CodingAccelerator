@@ -125,13 +125,13 @@ button:hover {
 }
 
 .facebook {
-    color: rgb(46, 93, 180);
+    color: #4267B2;
     font-size: 100px;
     padding: 0px 20px;
 }
 
 .facebook:hover {
-    color: rgb(128, 152, 197);
+    color: rgb(119, 135, 165);
 }
 
 .artstation {
@@ -141,7 +141,7 @@ button:hover {
 }
 
 .artstation:hover {
-    color: #89c4eb;
+    color: #afcfe4;
 }
 
 .google {
@@ -154,13 +154,22 @@ button:hover {
     color: #a9d1ec;
 }
 .youtube {
-    color: #cf2816;
+    color: #FF0000;
     font-size: 100px;
     padding: 0px 20px;
 }
 
 .youtube:hover {
-    color: #ffb6ae;
+    color: rgb(255, 197, 197);
+}
+.twitter {
+    color: #00acee;
+    font-size: 100px;
+    padding: 0px 20px;
+}
+
+.twitter:hover {
+    color: #97c3d4;
 }
 
 .banner-top #content {
@@ -183,7 +192,6 @@ button:hover {
 
 /* HEADER */
 
-/* FORM */
 
 #jumpTop {
     position: fixed;
@@ -201,7 +209,7 @@ button:hover {
 }
 html {
     scroll-behavior: smooth;
-
+}
 
 /* RESPONSIVE */
 
@@ -212,7 +220,7 @@ html {
     }
     .topNav {
         display: flex;
-        height: auto;
+        height: 65px;
         width: 100%;
         justify-content: space-between;
         align-items: center;
@@ -230,7 +238,7 @@ html {
         right: 0px;
         height: 2000px;
         width: 35%;
-        top: 35.7px;
+        top: 49.7px;
         background-color: rgba(26, 26, 29, 0.705);
         display: flex;
         flex-direction: column;
