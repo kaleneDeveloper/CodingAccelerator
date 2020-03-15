@@ -1,0 +1,68 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+* {
+    margin: 0px; padding: 0;
+    font-family: 'Lato';
+    box-sizing: border-box;
+    background-color: #24252A;
+}
+/* GLOBAL */
+
+/* HEADER */
+/* NAV */
+.logo {
+    cursor: pointer;
+    color: white;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.fa-korvue {
+    font-size: 70px;
+    color: white;
+    margin-right: 5px;
+}
+li, a, button{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 0.5px 0px 1px gray;
+    height: 70px;
+    z-index: 999;
+}
+.menu-right {
+    list-style: none;
+}
+.menu-right li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.menu-right li a {
+    padding: 10px;
+}
+.menu-right li a:hover {
+    transition: all 0.4s ease 0s;
+    color: #0088a9;
+}
+button {
+    margin-left: 30px;
+    padding: 9px 25px;
+    background-color: rgb(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+button:hover {
+    background-color: rgb(0, 136, 169, 0.8);
+}
+/* NAV */
+/* HEADER */

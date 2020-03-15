@@ -177,7 +177,7 @@ button:hover {
     position: absolute;
     text-align: center;
     width: 100%;
-    bottom: 85px;
+    bottom: 10%;
 }
 
 #titleStart {
@@ -285,9 +285,9 @@ html {
     /* BANNER */
 }
 
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 698px) {
     .banner-top #content {
-        bottom: 10px;
+        bottom: 13px;
     }
 }
 
@@ -306,6 +306,28 @@ html {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+@media screen and (max-width: 545px) {
+    .banner-top {
+        height: 550px;
+    }
+    .banner-top #content a{
+        font-size: 80px;
+    }
+    .banner-top #content {
+        bottom: -3px;
+    }
+
+}
+@media screen and (min-width: 1250px) {
+    .banner-top #content {
+        margin-left: -2%;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 7%;
+    }
+
 }
 
 /* RESPONSIVE */
